@@ -1,0 +1,9 @@
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Login" />
+</form>
+{% if errorMessage %}
+	<b><text style="color:red">{{ errorMessage }}</text></b>
+{% endif %}
+<a href="/UploadImages/regist"><input type="button" value="Register" /></a>

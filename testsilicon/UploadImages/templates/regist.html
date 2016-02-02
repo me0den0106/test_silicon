@@ -1,0 +1,8 @@
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Regist" />
+</form>
+{% if errorMessage %}
+	<b><text style="color:red">{{ errorMessage }}</text></b>
+{% endif %}
